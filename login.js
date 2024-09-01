@@ -52,7 +52,8 @@ function renderLoginForm() {
 loginButton.onclick = () => {
   login()
     .then(() => getUserInfo())
-    .then((res) => renderUserInfo(res.data));
+    // .then((res) => console.log(res.data))
+    .then((res) => renderUserInfo(res.data))
 };
 
 // 로그아웃 버튼을 클릭하는 경우
